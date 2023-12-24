@@ -319,7 +319,7 @@ public class CODE {
                 System.out.println("\t\t\t\t\t\t\t  Good morning!");
             }
             else if (hour > 12 && hour < 18){
-                System.out.println("\t\t\t\t\t\t\t  Good afternoon");
+                System.out.println("\t\t\t\t\t\t\t  Good afternoon!");
             }
             else {
                 System.out.println("\t\t\t\t\t\t\t  Good evening");

@@ -316,7 +316,7 @@ public class CODE {
             System.out.println(DateTimeFormatter.ofPattern("\n \t\t\t\t\t\t\t\t  HH:mm\n \t\t\t\t\t\t\tEEE, MMM dd yyyy").format(ZonedDateTime.now(ZoneId.systemDefault())));
             int hour = ZonedDateTime.now(ZoneId.systemDefault()).getHour();
             if (hour < 12){
-                System.out.println("\t\t\t\t\t\t\t  Good morning");
+                System.out.println("\t\t\t\t\t\t\t  Good morning!");
             }
             else if (hour > 12 && hour < 18){
                 System.out.println("\t\t\t\t\t\t\t  Good afternoon");

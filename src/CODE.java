@@ -268,7 +268,12 @@ public class CODE {
             }
             int minutes = (int) ((int) TeamInfo.timeUntil[i].toMinutes() - 60 * TeamInfo.timeUntil[i].toHours());
             System.out.println("\n" + TeamInfo.team1[i] + "\t vs \t" + TeamInfo.team2[i] + "\n");
-            System.out.println(TeamInfo.timeUntil[i].toHours() + "h " + minutes + "m");
+            if (TeamInfo.timeUntil[i].toSeconds() == 0){
+                System.out.println("LIVE");
+            }
+            else{
+                System.out.println(TeamInfo.timeUntil[i].toHours() + "h " + minutes + "m");
+            }
             System.out.println(TeamInfo.leagues[i] + "\n");
             System.out.println("*******");
         }
@@ -296,7 +301,12 @@ public class CODE {
                 if (TeamInfo.team1[i].contains(teamPref) || TeamInfo.team2[i].contains(teamPref)) {
                     System.out.println("\n" + TeamInfo.team1[i] + "\t vs \t" + TeamInfo.team2[i]);
                     int minutes = (int) ((int) TeamInfo.timeUntil[i].toMinutes() - 60 * TeamInfo.timeUntil[i].toHours());
-                    System.out.println(TeamInfo.timeUntil[i].toHours() + "h " + minutes + "m");
+                    if (TeamInfo.timeUntil[i].toSeconds() == 0){
+                        System.out.println("LIVE");
+                    }
+                    else{
+                        System.out.println(TeamInfo.timeUntil[i].toHours() + "h " + minutes + "m");
+                    }
                     System.out.println(TeamInfo.leagues[i]);
                     System.out.println("*****");
                     count++;
